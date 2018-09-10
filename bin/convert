@@ -1,0 +1,3 @@
+#!/bin/bash -eu
+
+docker run -it -v `pwd`:/app yuya-takeyama/libreoffice-docx2pdf --headless --nologo --nofirststartwizard --convert-to pdf "$1"
